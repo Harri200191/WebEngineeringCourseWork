@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonsai Pets - About</title>
+    <title>Bonsai Pets - Contact Us</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
     <h1>Bonsai Pets</h1>
-    <p>Your one-stop shop for Bonsai pets!</p>
+    <p>Contact Us for any inquiries or information!</p>
 </header>
 
 <nav>
@@ -22,8 +22,21 @@
 
 <div class="container">
     <section>
-        <h2>About Us</h2>
-        <p>Bonsai Pets is dedicated to providing unique and enjoyable Bonsai pet experiences. We believe that everyone should have the opportunity to enjoy the companionship of a Bonsai animal.</p>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out through the form below!</p>
+
+        <form action="#" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
     </section>
 </div>
 
