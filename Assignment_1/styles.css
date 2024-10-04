@@ -99,3 +99,27 @@ img {
         flex-direction: column;
     }
 }
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between images */
+    flex-wrap: wrap; /* Allows images to wrap when the screen size is small */
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 45%; /* Use percentage width for responsive behavior */
+    height: auto; /* Keep the aspect ratio */
+    max-width: 300px; /* Limit the maximum size */
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for visual appeal */
+}
+
+@media (max-width: 768px) {
+    .image-gallery img {
+        width: 90%; /* On smaller screens, images will be stacked and take more space */
+        margin-bottom: 20px; /* Add space between stacked images */
+    }
+}
