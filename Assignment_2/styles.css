@@ -221,3 +221,36 @@ li {
     padding: 5px 0;
     font-size: 16px;
 }
+
+/* General button styling */
+.styled-button {
+    background-color: #5a9bd3; /* Blue */
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.styled-button:hover {
+    background-color: #417ba5; /* Darker blue */
+}
+
+/* Styling for the welcome section */
+#welcomeSection {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#welcomeText {
+    font-size: 16px;
+    line-height: 1.5;
+    color: black; /* Default text color */
+}
