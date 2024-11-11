@@ -57,7 +57,7 @@
     form input, form textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
@@ -253,4 +253,23 @@ li {
     font-size: 16px;
     line-height: 1.5;
     color: black; /* Default text color */
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
