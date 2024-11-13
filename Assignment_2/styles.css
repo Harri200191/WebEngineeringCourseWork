@@ -31,7 +31,7 @@
     
     nav a:hover {
     background: #575757;
-    }
+}
     
     .container {
     max-width: 1200px;
@@ -141,15 +141,32 @@ th {
         max-width: 300px;
         object-fit: cover;
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition:transform 0.3s ease-in-out; 
     }
+    .image-gallery img:hover {
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
     
     @media (max-width: 768px) {
         .image-gallery img {
+           
             width: 90%; 
             margin-bottom: 20px; 
         }
     }
+    #newCityInput{
+    width: 200px;
+    height:30px;
+    border:1px solid #4CAF50;
+    border-radius: 5px;
+    text-align: center;
+  
+}
+
+
+
 
  /* General button styling */
 .styled-button {
@@ -218,6 +235,8 @@ ul {
 }
 
 li {
+    list-style: none;
+    margin:5px 0px 0px 5px;
     padding: 5px 0;
     font-size: 16px;
 }
