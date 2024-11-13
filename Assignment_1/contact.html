@@ -24,19 +24,22 @@
     <section>
         <h2>Contact Us</h2>
         <p>If you have any questions, feel free to reach out through the form below!</p>
+   <form id="contactForm" action="#" >
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required>
+        <small class="error-message" id="nameError"></small>
 
-        <form action="#" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+        <small class="error-message" id="emailError"></small>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <small id="charCounter">0/250 characters</small>
+        <small class="error-message" id="messageError"></small>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
+        <button type="submit">Submit</button>
+    </form>
     </section>
 </div>
 

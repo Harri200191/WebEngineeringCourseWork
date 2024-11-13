@@ -51,20 +51,37 @@
     </section>
 
     <section>
-        <h2>Bonsai Tutorials</h2>
-        <p>Book a tutorial in one of the following cities:</p>
-        <ul id="tutorialCities">
-            <li>Karachi</li>
-            <li>Lahore</li>
-            <li>Islamabad</li>
-            <li>Multan</li>
-        </ul>
-        <div class="button-group">
-            <button id="addCity" class="styled-button">Add City</button>
-            <button id="removeCity" class="styled-button">Remove Last City</button>
+        <div class="container">
+            <h2>Bonsai Tutorials</h2>
+            <p>Book a tutorial in one of the following cities:</p>
+            <ul id="cityList" class="city-list"></ul>
+
+            <div class="buttons">
+                <button id="addCityBtn" class="styled-button">Add City</button>
+                <button id="removeCityBtn" class="styled-button">Remove City</button>
+            </div>
+        </div>
+
+        <!-- Add City Modal -->
+        <div id="addCityModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeAddCityModal">&times;</span>
+                <h3>Add a City</h3>
+                <input type="text" id="newCityInput" placeholder="Enter city name">
+                <button id="confirmAddCity" class="styled-button">Add City</button>
+            </div>
+        </div>
+
+        <!-- Remove City Modal -->
+        <div id="removeCityModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeRemoveCityModal">&times;</span>
+                <h4>Remove selected</h4>
+                <select id="removeCitySelect"></select>
+                <button id="confirmRemoveCity" class="styled-button"><h2>Confirm</h2></button>
+            </div>
         </div>
     </section>
-</div>
 
 <footer>
     <p>&copy; 2024 Bonsai Pets | Follow us on 
@@ -76,9 +93,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
