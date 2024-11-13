@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Pets - Services/Products</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript/service.js" defer></script> <!-- Connect the script -->
+</head>
+<body>
+
+<header>
+    <h1>Bonsai Pets</h1>
+    <p>Your one-stop shop for Bonsai pets!</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="service.html">Services/Products</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <section>
+        <h2>Our Products</h2>
+        <h3>Bonsai Animal Kits</h3>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Bonsai Kit A</td>
+                <td>$25</td>
+            </tr>
+            <tr>
+                <td>Bonsai Kit B</td>
+                <td>$30</td>
+            </tr>
+            <tr>
+                <td>Bonsai Kit C</td>
+                <td>$35</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>DIY Bonsai Pet Kits</h2>
+        <p>Our DIY kits provide everything you need to create your own Bonsai pet. Get started on a fun journey with us!</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Bonsai Tutorials</h2>
+            <p>Book a tutorial in one of the following cities:</p>
+            <ul id="cityList" class="city-list"></ul>
+
+            <div class="buttons">
+                <button id="addCityBtn" class="styled-button">Add City</button>
+                <button id="removeCityBtn" class="styled-button">Remove City</button>
+            </div>
+        </div>
+
+        <!-- Add City Modal -->
+        <div id="addCityModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeAddCityModal">&times;</span>
+                <h3>Add a City</h3>
+                <input type="text" id="newCityInput" placeholder="Enter city name">
+                <button id="confirmAddCity" class="styled-button">Add City</button>
+            </div>
+        </div>
+
+        <!-- Remove City Modal -->
+        <div id="removeCityModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeRemoveCityModal">&times;</span>
+                <h4>Remove selected</h4>
+                <select id="removeCitySelect"></select>
+                <button id="confirmRemoveCity" class="styled-button"><h2>Confirm</h2></button>
+            </div>
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2024 Bonsai Pets | Follow us on 
+        <a href="#" class="social-link">Facebook</a>, 
+        <a href="#" class="social-link">Instagram</a>, 
+        <a href="#" class="social-link">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
