@@ -57,7 +57,7 @@
     form input, form textarea {
     width: 100%;
     padding: 10px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1em;
@@ -195,6 +195,17 @@ th {
     justify-content: center; /* Center the buttons horizontally */
     margin-top: 15px; /* Add space above the button group */
 }
+#petType {
+    width: 100%; /* Full width like input fields */
+    padding: 10px; /* Same padding as input fields */
+    margin-bottom: 20px; /* Space below the field */
+    border: 1px solid #ccc; /* Border style matching input fields */
+    border-radius: 4px; /* Rounded corners like input fields */
+    font-size: 1em; /* Same font size */
+    font-family: inherit; /* Matches input font */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
 
 /* Hidden section styling */
 #details {
@@ -205,23 +216,7 @@ th {
     margin-top: 10px; /* Space above the section */
 }
 
-/* General button styling */
-.styled-button {
-    background-color: #4CAF50; /* Green */
-    color: white;
-    padding: 10px 20px;
-    margin: 5px;
-    border: none;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-/* Button hover effect */
-.styled-button:hover {
-    background-color: #45a049;
-}
 
 /* Styling for the list of cities */
 ul {
@@ -241,54 +236,65 @@ li {
     font-size: 16px;
 }
 
-/* General button styling */
-.styled-button {
-    background-color: #5a9bd3; /* Blue */
-    color: white;
-    padding: 10px 15px;
-    margin: 10px 5px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+
+.city-list {
+    list-style: none;
+    padding: 0;
+  
+}
+
+.city-list li {
+    padding: 10px;
+
+    margin: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+.city-list li:hover{
+    background-color: rgb(246, 239, 239)
 }
 
-/* Hover effect for buttons */
-.styled-button:hover {
-    background-color: #417ba5; /* Darker blue */
-}
-
-/* Styling for the welcome section */
-#welcomeSection {
-    background-color: #f9f9f9;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    margin-bottom: 20px;
-}
-
-#welcomeText {
-    font-size: 16px;
-    line-height: 1.5;
-    color: black; /* Default text color */
-}
-
-.error-message {
-    color: red;
-    font-size: 12px;
-}
-
-.success-message {
-    color: green;
-    font-size: 14px;
+.city-list li.selected {
+    background-color: #318d34;
+    color: white;
     font-weight: bold;
 }
 
-input, select {
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    padding: 8px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease-in-out;
 }
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.modal-btn {
+    margin-top: 10px;
+    padding: 10px 20px;
+ background-color: #4CAF50;
+    color: white;
+}
+#removeCitySelect{
+    display:none;
+}
+
+
+
