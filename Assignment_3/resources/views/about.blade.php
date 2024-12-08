@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonsai Pets - About</title>
+    @vite(['resources/css/styles.css', 'resources/js/about.js'])
+</head>
+<body>
+
+<header>
+    <h1>Bonsai Pets</h1>
+    <p>Your one-stop shop for Bonsai pets!</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/service">Services/Products</a>
+    <a href="/contact">Contact</a>
+</nav>
+<div class="container">
+    <section>
+        <h2>About Us</h2>
+        <p>Bonsai Pets is dedicated to providing unique and enjoyable Bonsai pet experiences. We believe that everyone should have the opportunity to enjoy the companionship of a Bonsai animal.</p>
+        <div id="details" style="display: none;"> <!-- Hidden details section -->
+            <p>Our team consists of experts who are passionate about creating miniature pet ecosystems. We offer customizable kits to suit your needs!</p>
+        </div>
+        <div class="button-group">
+            <button id="showDetails" class="styled-button">Show Details</button>
+            <button id="hideDetails" class="styled-button">Hide Details</button>
+            <button id="changeBgColor" class="styled-button">Change Background Color</button>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Bonsai Pets | Follow us on 
+        <a href="#" class="social-link">Facebook</a>, 
+        <a href="#" class="social-link">Instagram</a>, 
+        <a href="#" class="social-link">Twitter</a>
+    </p>
+</footer>
+
+</body>
+</html>
